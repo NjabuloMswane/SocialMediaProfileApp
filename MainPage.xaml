@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SocialMediaProfileApp.MainPage">
+
+    <StackLayout Padding="20">
+      <Image Source="{Binding ProfilePicture}" WidthRequest="100" HeightRequest="100" />
+      <label Text="{Binding FirstName}" FontSize="20" HorizontalOptions="CenterAndExpand" />
+      <label Text="{Binding LastName}" FontSize="20" HorizontalOptions="CenterAndExpand" />
+      <label Text="{Binding Bio}" FontSize="16" HorizontalOptions="CenterAndExpand" />
+      <label Text="{Binding Interest}" FontSize="16" HorizontalOptions="CenterAndExpand" />
+      <Button Text="Edit" Clicked="EditButton_Clicked" HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
+
